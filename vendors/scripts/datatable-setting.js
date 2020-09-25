@@ -1,11 +1,13 @@
 $('document').ready(function(){
 	$('.data-table').DataTable({
-		scrollCollapse: true,
+		scrollCollapse: false,
+		"scrollX": true,
 		autoWidth: false,
-		responsive: true,
+		responsive: false,
 		columnDefs: [{
 			targets: "datatable-nosort",
 			orderable: false,
+			
 		}],
 		"lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
 		"language": {

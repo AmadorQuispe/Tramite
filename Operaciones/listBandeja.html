@@ -348,8 +348,8 @@
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Mantenimientos</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Personal</li>
+									<li class="breadcrumb-item"><a href="index.html">Bandeja</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Documentos recepcionados</li>
 								</ol>
 							</nav>
 							<div class="dropdown-divider"></div>
@@ -364,27 +364,43 @@
 				<!-- Simple Datatable start -->
 				<div class="card-box mb-30">
 					<div class="pd-20">
-						<h4 class="text-blue h4">Listado de Personal registrado</h4>
+						<h4 class="text-blue h4">Listado de expedientes</h4>
 					</div>
 					<div class="pb-20">
-						<table class="data-table table stripe hover nowrap">
-							<thead>
+						<table class="data-table table stripe hover wrap" >
+							<thead class="encab-table">
 								<tr>
-									<th class="table-plus datatable-nosort">Name</th>
-									<th>Age</th>
-									<th>Office</th>
-									<th>Address</th>
-									<th>Start Date</th>
-									<th class="datatable-nosort">Action</th>
+									<th class="table-plus datatable-nosort">Accion</th>
+									<th>Nro Expediente</th>
+									<th>Documento</th>
+									<th>Asunto</th>
+									<th>Remitente</th>
+									<th>Folios</th>
+									<th>Fecha de tramite</th>
+									<th>Estado de tramite</th>
+									<th>Observacion</th>									
+									<th>Prioridad</th>
+									<th>Adjunto</th>									
+									<th class="datatable-nosort">Acciones</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody class="cuerp-table">
 								<tr>
-									<td class="table-plus">Gloria F. Mead</td>
-									<td>25</td>
-									<td>Sagittarius</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
+									<td>
+										<p class="btn btn-success" title="Enviar">
+											<i class="fa fa-share-square" aria-hidden="true"></i>
+										</p>
+									</td>
+									<td>Exp-345566</td>
+									<td>Oficio</td>
+									<td>Invitacion a la inaguracion de local comercial</td>
+									<td>Asociacion de comerciantes</td>
+									<td>3</td>
 									<td>29-03-2018</td>
+									<td>Registrado</td>
+									<td>Se adjunto folletos de la inaguracion</td>
+									<td>Normal</td>
+									<td>(v)</td>
 									<td>
 										<div class="dropdown">
 											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
@@ -399,12 +415,23 @@
 										</div>
 									</td>
 								</tr>
+
 								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
+									<td>
+										<p class="btn btn-success" title="Enviar">
+											<i class="fa fa-share-square" aria-hidden="true"></i>
+										</p>
+									</td>
+									<td>Exp-345566</td>
+									<td>Oficio</td>
+									<td>Invitacion a la inaguracion de local comercial</td>
+									<td>Asociacion de comerciantes</td>
+									<td>3</td>
 									<td>29-03-2018</td>
+									<td>Registrado</td>
+									<td>Se adjunto folletos de la inaguracion</td>
+									<td>Normal</td>
+									<td>(v)</td>
 									<td>
 										<div class="dropdown">
 											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
@@ -419,206 +446,8 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>20</td>
-									<td>Gemini</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>25</td>
-									<td>Gemini</td>
-									<td>2829 Trainer Avenue Peoria, IL 61602 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>20</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>18</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Sagittarius</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="table-plus">Andrea J. Cagle</td>
-									<td>30</td>
-									<td>Gemini</td>
-									<td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-									<td>29-03-2018</td>
-									<td>
-										<div class="dropdown">
-											<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
-												data-toggle="dropdown">
-												<i class="dw dw-more"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-												<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-												<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
+
+								
 							</tbody>
 						</table>
 					</div>
