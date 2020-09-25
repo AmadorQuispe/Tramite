@@ -115,7 +115,8 @@
 								<li>
 									<a href="#">
 										<img src="../vendors/images/photo1.jpg" alt="">
-										<h3>Lea R. Frith <h3></h3></h3>
+										<h3>Lea R. Frith <h3></h3>
+										</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
@@ -213,8 +214,7 @@
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebaricon-3" name="menu-dropdown-icon" class="custom-control-input"
 							value="icon-style-3">
-						<label class="custom-control-label" for="sidebaricon-3"><i
-								class="fa fa-angle-double-right"></i></label>
+						<label class="custom-control-label" for="sidebaricon-3"><i class="fa fa-angle-double-right"></i></label>
 					</div>
 				</div>
 
@@ -223,8 +223,7 @@
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebariconlist-1" name="menu-list-icon" class="custom-control-input"
 							value="icon-list-style-1" checked="">
-						<label class="custom-control-label" for="sidebariconlist-1"><i
-								class="ion-minus-round"></i></label>
+						<label class="custom-control-label" for="sidebariconlist-1"><i class="ion-minus-round"></i></label>
 					</div>
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebariconlist-2" name="menu-list-icon" class="custom-control-input"
@@ -240,14 +239,12 @@
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebariconlist-4" name="menu-list-icon" class="custom-control-input"
 							value="icon-list-style-4" checked="">
-						<label class="custom-control-label" for="sidebariconlist-4"><i
-								class="icon-copy dw dw-next-2"></i></label>
+						<label class="custom-control-label" for="sidebariconlist-4"><i class="icon-copy dw dw-next-2"></i></label>
 					</div>
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebariconlist-5" name="menu-list-icon" class="custom-control-input"
 							value="icon-list-style-5">
-						<label class="custom-control-label" for="sidebariconlist-5"><i
-								class="dw dw-fast-forward-1"></i></label>
+						<label class="custom-control-label" for="sidebariconlist-5"><i class="dw dw-fast-forward-1"></i></label>
 					</div>
 					<div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="sidebariconlist-6" name="menu-list-icon" class="custom-control-input"
@@ -287,8 +284,7 @@
 					</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon fa fa-heart" aria-hidden="true"></span><span
-								class="mtext">Mantenimientos</span>
+							<span class="micon fa fa-heart" aria-hidden="true"></span><span class="mtext">Mantenimientos</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="#">Acciones doc</a></li>
@@ -305,8 +301,7 @@
 
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon fa fa-heart" aria-hidden="true"></span><span
-								class="mtext">Operaciones</span>
+							<span class="micon fa fa-heart" aria-hidden="true"></span><span class="mtext">Operaciones</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="#">Archivar documentos</a></li>
@@ -318,8 +313,7 @@
 
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon fa fa-heart" aria-hidden="true"></span><span
-								class="mtext">Reportes</span>
+							<span class="micon fa fa-heart" aria-hidden="true"></span><span class="mtext">Reportes</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="#">Consulta interna</a></li>
@@ -353,7 +347,7 @@
 								</ol>
 							</nav>
 							<div class="dropdown-divider"></div>
-							
+
 
 						</div>
 
@@ -367,7 +361,7 @@
 						<h4 class="text-blue h4">Listado de todo los expediewtes</h4>
 					</div>
 					<div class="pb-20">
-						<table class="data-table table stripe hover wrap" >
+						<table class="data-table table stripe hover wrap">
 							<thead class="encab-table">
 								<tr>
 									<th class="table-plus datatable-nosort">Accion</th>
@@ -378,16 +372,16 @@
 									<th>Folios</th>
 									<th>Fecha de tramite</th>
 									<th>Estado de tramite</th>
-									<th>Observacion</th>									
+									<th>Observacion</th>
 									<th>Prioridad</th>
-									<th>Adjunto</th>									
+									<th>Adjunto</th>
 									<th class="datatable-nosort">Acciones</th>
 								</tr>
 							</thead>
 							<tbody class="cuerp-table">
 								<tr>
 									<td>
-										<p class="btn btn-success" title="Enviar">
+										<p class="btn btn-success" title="Enviar" data-toggle="modal" data-target="#bd-example-modal-lg">
 											<i class="fa fa-share-square" aria-hidden="true"></i>
 										</p>
 									</td>
@@ -418,7 +412,7 @@
 
 								<tr>
 									<td>
-										<p class="btn btn-success" title="Enviar">
+										<p class="btn btn-success" title="Enviar" data-toggle="modal" data-target="#bd-example-modal-lg">
 											<i class="fa fa-share-square" aria-hidden="true"></i>
 										</p>
 									</td>
@@ -447,12 +441,108 @@
 									</td>
 								</tr>
 
-								
+
 							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- Simple Datatable End -->
+				<!--Modal start-->
+				<div class="modal fade bs-example-modal-lg" id="bd-example-modal-lg" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable ">
+						<div class="modal-content">
+							<div class="modal-header" data-bgcolor="#0b132b">
+								<h4 class="modal-title text-white" id="myLargeModalLabel">Enviar Expediente</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+							<div class="modal-body">
+								<form class="">
+									<div class="card card-box">
+										<div class="card-header bg-secondary">Oficina Destino</div>
+										<div class="card-body">
+											<div class="form-group row">
+												<label class="col-sm-6 col-md-2 col-form-label">Oficina</label>
+												<div class="col-sm-6 col-md-4">
+													<select class="custom-select col-6">
+														<option selected="">Choose...</option>
+														<option value="1">One</option>
+														<option value="2">Two</option>
+														<option value="3">Three</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-6 col-md-2 col-form-label">Oficina</label>
+												<div class="col-sm-6 col-md-4">
+													<select class="custom-select col-6">
+														<option selected="">Choose...</option>
+														<option value="1">One</option>
+														<option value="2">Two</option>
+														<option value="3">Three</option>
+													</select>
+												</div>
+											</div>
+
+											
+												<div class="form-group col-md-12">
+													<label for="inputState">Aficina</label>
+													<select id="inputState" class="form-control">
+														<option selected>Choose...</option>
+														<option>Administrativa</option>
+													</select>
+												</div>
+												<div class="form-group col-md-6">
+													<label for="inputState">Areao gerencia</label>
+													<select id="inputState" class="form-control">
+														<option selected>Choose...</option>
+														<option>Gerencia General</option>
+														<option>Gerencia de negocios</option>
+													</select>
+												</div>
+												<div class="form-group col-md-12">
+													<label for="inputEmail4">Responsable del area</label>
+													<input type="text" class="form-control" id="inputEmail4">
+												</div>
+										</div>
+									</div>
+									<div class="card card-box pb-1">
+										<div class="card-header bg-secondary">Con Copia a:</div>
+										<div class="card-body form-inline">
+											
+												<div class="form-group mb-2">
+													<label for="staticEmail2" class="my-1 mr-2">Agencia</label>
+													<select id="inputState" class="form-control">
+														<option selected>Choose...</option>
+														<option>Administrativa</option>
+													</select>
+												</div>
+												<div class="form-group mb-2">
+													<label for="staticEmail2" class="my-1 mr-2 ml-2">Area o gerencia</label>
+													<select id="inputState" class="form-control">
+														<option selected>Choose...</option>
+														<option>Administrativa</option>
+													</select>
+												</div>
+												
+												<button type="submit" class="btn btn-primary mb-2 ml-2">Confirm identity</button>
+											
+										</div>
+									</div>
+								</form>
+
+
+
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Modal end-->
 
 
 			</div>
