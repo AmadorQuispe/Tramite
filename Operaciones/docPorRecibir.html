@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <title>Sistram - Sistema de tramite documentario.</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../vendors/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../vendors/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../vendors/images/favicon-16x16.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/styles/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="../src/plugins/jquery-steps/jquery.steps.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>-->
+
+</head>
+
+<body>
+    <!--loader-->
+    <!--<div class="pre-loader">
+		<div class="pre-loader-box">
+			<div class="loader-logo"><img src="../vendors/images/deskapp-logo.svg" alt=""></div>
+			<div class='loader-progress' id="progress_div">
+				<div class='bar' id='bar1'></div>
+			</div>
+			<div class='percent' id='percent1'>0%</div>
+			<div class="loading-text">
+				Cargando...
+			</div>
+		</div>
+	</div>-->
+    <!--Header horizontal-->
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon dw dw-menu"></div>
+            <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+            <div class="header-search">
+                <form>
+                    <div class="form-group mb-0">
+                        <i class="dw dw-search2 search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Buscar aquí">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                                <i class="ion-arrow-down-c"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">DE</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">A</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">ASUNTO</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-primary">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="dashboard-setting user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                        <i class="dw dw-settings2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                        <i class="icon-copy dw dw-notification"></i>
+                        <span class="badge notification-active"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="notification-list mx-h-350 customscroll">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="../vendors/images/img.jpg" alt="">
+                                        <h3>Amador Quispe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../vendors/images/photo1.jpg" alt="">
+                                        <h3>Lea R. Frith <h3></h3>
+                                        </h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../vendors/images/photo2.jpg" alt="">
+                                        <h3>Erik L. Richards</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo3.jpg" alt="">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo4.jpg" alt="">
+                                        <h3>Renee I. Hansen</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/img.jpg" alt="">
+                                        <h3>Vicki M. Coleman</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+                            <img src="../vendors/images/photo1.jpg" alt="">
+                        </span>
+                        <span class="user-name">Amador J. Quispe</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Perfil</a>
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i> Ajustes</a>
+                        <a class="dropdown-item" href="faq.html"><i class="dw dw-help"></i> Ayuda</a>
+                        <a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+            <div class="github-link">
+                <a href="" target="_blank"><img src="vendors/images/github.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h3 class="weight-600 font-16 text-blue">
+                Layout Settings
+                <span class="btn-block font-weight-400 font-12">User Interface Settings</span>
+            </h3>
+            <div class="close-sidebar" data-toggle="right-sidebar-close">
+                <i class="icon-copy ion-close-round"></i>
+            </div>
+        </div>
+        <div class="right-sidebar-body customscroll">
+            <div class="right-sidebar-body-content">
+                <h4 class="weight-600 font-18 pb-10">Header Background</h4>
+                <div class="sidebar-btn-group pb-30 mb-10">
+                    <a href="javascript:void(0);" class="btn btn-outline-primary header-white active">White</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-primary header-dark">Dark</a>
+                </div>
+
+                <h4 class="weight-600 font-18 pb-10">Sidebar Background</h4>
+                <div class="sidebar-btn-group pb-30 mb-10">
+                    <a href="javascript:void(0);" class="btn btn-outline-primary sidebar-light ">White</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-primary sidebar-dark active">Dark</a>
+                </div>
+
+                <h4 class="weight-600 font-18 pb-10">Menu Dropdown Icon</h4>
+                <div class="sidebar-radio-group pb-10 mb-10">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebaricon-1" name="menu-dropdown-icon" class="custom-control-input"
+                            value="icon-style-1" checked="">
+                        <label class="custom-control-label" for="sidebaricon-1"><i class="fa fa-angle-down"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebaricon-2" name="menu-dropdown-icon" class="custom-control-input"
+                            value="icon-style-2">
+                        <label class="custom-control-label" for="sidebaricon-2"><i class="ion-plus-round"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebaricon-3" name="menu-dropdown-icon" class="custom-control-input"
+                            value="icon-style-3">
+                        <label class="custom-control-label" for="sidebaricon-3"><i
+                                class="fa fa-angle-double-right"></i></label>
+                    </div>
+                </div>
+
+                <h4 class="weight-600 font-18 pb-10">Menu List Icon</h4>
+                <div class="sidebar-radio-group pb-30 mb-10">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-1" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-1" checked="">
+                        <label class="custom-control-label" for="sidebariconlist-1"><i
+                                class="ion-minus-round"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-2" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-2">
+                        <label class="custom-control-label" for="sidebariconlist-2"><i class="fa fa-circle-o"
+                                aria-hidden="true"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-3" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-3">
+                        <label class="custom-control-label" for="sidebariconlist-3"><i class="dw dw-check"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-4" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-4" checked="">
+                        <label class="custom-control-label" for="sidebariconlist-4"><i
+                                class="icon-copy dw dw-next-2"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-5" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-5">
+                        <label class="custom-control-label" for="sidebariconlist-5"><i
+                                class="dw dw-fast-forward-1"></i></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="sidebariconlist-6" name="menu-list-icon" class="custom-control-input"
+                            value="icon-list-style-6">
+                        <label class="custom-control-label" for="sidebariconlist-6"><i class="dw dw-next"></i></label>
+                    </div>
+                </div>
+
+                <div class="reset-options pt-30 text-center">
+                    <button class="btn btn-danger" id="reset-settings">Reset Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-side-bar">
+        <div class="brand-logo">
+            <a href="index.html">
+                <img src="../vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
+                <img src="../vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+            </a>
+            <div class="close-sidebar" data-toggle="left-sidebar-close">
+                <i class="ion-close-round"></i>
+            </div>
+        </div>
+        <div class="menu-block customscroll">
+            <div class="sidebar-menu">
+                <ul id="accordion-menu">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Dashboard 1</a></li>
+                            <li><a href="#">Dashboard 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon fa fa-heart" aria-hidden="true"></span><span
+                                class="mtext">Mantenimientos</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Acciones doc</a></li>
+                            <li><a href="#">Archivadores</a></li>
+                            <li><a href="#">Documentos</a></li>
+                            <li><a href="#">Estados doc</a></li>
+                            <li><a href="#">Oficinas</a></li>
+                            <li><a href="#">Personal</a></li>
+                            <li><a href="#">Remitentes</a></li>
+                            <li><a href="#">Responsables</a></li>
+                            <li><a href="#">Tipos de tramite</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon fa fa-heart" aria-hidden="true"></span><span
+                                class="mtext">Operaciones</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Archivar documentos</a></li>
+                            <li><a href="#">Emision de documentos</a></li>
+                            <li><a href="#">Envio y recepcion</a></li>
+                            <li><a href="#">Registro de documentos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon fa fa-heart" aria-hidden="true"></span><span
+                                class="mtext">Reportes</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Consulta interna</a></li>
+                            <li><a href="#">Estado de atencion</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="chat.html" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-chat3"></span><span class="mtext">Chat</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="min-height-200px">
+                <div class="page-header mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="title">
+                                <h4>PERSONAL</h4>
+                            </div>
+                            <nav aria-label="breadcrumb" role="navigation">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Bandeja</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Documentos recepcionados</li>
+                                </ol>
+                            </nav>
+                            <div class="dropdown-divider"></div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Simple Datatable start -->
+                <div class="card-box mb-30">
+                    <div class="pd-20">
+                        <h4 class="text-blue h4">Listado de todo los expediewtes</h4>
+                    </div>
+                    <div class="pb-20">
+                        <table class="data-table table stripe hover wrap">
+                            <thead class="encab-table">
+                                <tr>
+                                    <th>Nro Expediente</th>
+                                    <th>Remitente</th>
+                                    <th>Descripcion</th>
+                                    <th>Fecha trámite</th>
+                                    <th>Fecha de envio</th>
+                                    <th>Oficina</th>
+                                    <th>Prioridad</th>
+                                    <th>Fecha limite</th>
+                                    <th>Observaciones</th>
+                                    <th class="datatable-nosort">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cuerp-table">
+                                <tr>
+                                    <td>Exp-345566</td>
+                                    <td>Amador Quispe Huaycho</td>
+                                    <td>Oficio N° 45/UR - solicita apoyo economico</td>
+                                    <td>15-09-2020 14:50pm</td>
+                                    <td>16-09-2020 14:50pm</td>
+                                    <td>Mesa de partes</td>
+                                    <td>Normal</td>
+                                    <td></td>
+                                    <td>Se adjunta cd y sobres</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                                href="#" role="button" data-toggle="dropdown">
+                                                <i class="dw dw-more"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Exp-345566</td>
+                                    <td>Amador Quispe Huaycho</td>
+                                    <td>Oficio N° 45/UR - solicita apoyo economico</td>
+                                    <td>15-09-2020 14:50pm</td>
+                                    <td>16-09-2020 14:50pm</td>
+                                    <td>Mesa de partes</td>
+                                    <td>Normal</td>
+                                    <td></td>
+                                    <td>Se adjunta cd y sobres</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                                href="#" role="button" data-toggle="dropdown">
+                                                <i class="dw dw-more"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Exp-345566</td>
+                                    <td>Amador Quispe Huaycho</td>
+                                    <td>Oficio N° 45/UR - solicita apoyo economico</td>
+                                    <td>15-09-2020 14:50pm</td>
+                                    <td>16-09-2020 14:50pm</td>
+                                    <td>Mesa de partes</td>
+                                    <td>Normal</td>
+                                    <td></td>
+                                    <td>Se adjunta cd y sobres</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                                href="#" role="button" data-toggle="dropdown">
+                                                <i class="dw dw-more"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
+                                                <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Simple Datatable End -->
+                <!--Modal start-->
+                <div class="modal fade bs-example-modal-lg" id="bd-example-modal-lg" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable ">
+                        <div class="modal-content">
+                            <div class="modal-header" data-bgcolor="#0b132b">
+                                <h4 class="modal-title text-white" id="myLargeModalLabel">Enviar Expediente</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="">
+                                    <div class="card card-box">
+                                        <div class="card-header bg-secondary">Oficina Destino</div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Agencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Administrativa</option>
+                                                        <option value="2">Arequipa</option>
+                                                        <option value="3">Anta</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-12 col-md-2 col-form-label">Area o Gerencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Gerencia general</option>
+                                                        <option value="2">Gerencia Negocios</option>
+                                                        <option value="3">Gerencia Riesgos</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Responsable del
+                                                    Area</label>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <input class="form-control" type="text" placeholder="Johnny Brown">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card card-box pb-1">
+                                            <div class="card-header bg-secondary" id="headingOne">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Con Copia A :
+                                                </button>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-12 col-md-2 col-form-label">Agencia</label>
+                                                        <div class="col-sm-12 col-md-3">
+                                                            <select class="custom-select col-12">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">Administrativa</option>
+                                                                <option value="2">Arequipa</option>
+                                                                <option value="3">Anta</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="col-sm-12 col-md-2 col-form-label">Area o
+                                                            Gerencia</label>
+                                                        <div class="col-sm-12 col-md-3">
+                                                            <select class="custom-select col-12">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">Gerencia general</option>
+                                                                <option value="2">Gerencia Negocios</option>
+                                                                <option value="3">Gerencia Riesgos</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-2">
+                                                            <p class="btn btn-success">Agregar</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header">
+                                                            <h2 class="card-title">Copias</h2>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Agencia</th>
+                                                                        <th scope="col">Area</th>
+                                                                        <th scope="col">Responsable</th>
+                                                                        <th scope="col">Eliminar</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                        <td><span
+                                                                                class="badge badge-primary">Primary</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                        <td><span
+                                                                                class="badge badge-secondary">Secondary</span>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </form>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal end-->
+
+
+            </div>
+            <div class="footer-wrap pd-20 mb-20 card-box">
+                DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit
+                    Hingarajiya</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="../vendors/scripts/core.js"></script>
+    <script src="../vendors/scripts/script.min.js"></script>
+    <script src="../vendors/scripts/process.js"></script>
+    <script src="../vendors/scripts/layout-settings.js"></script>
+    <script src="../src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="../src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+
+
+    <script src="../src/plugins/jquery-steps/jquery.steps.js"></script>
+    <script src="../vendors/scripts/steps-setting.js"></script>
+    <!-- buttons for Export datatable -->
+    <script src="../src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="../src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="../src/plugins/datatables/js/buttons.print.min.js"></script>
+    <script src="../src/plugins/datatables/js/buttons.html5.min.js"></script>
+    <script src="../src/plugins/datatables/js/buttons.flash.min.js"></script>
+    <script src="../src/plugins/datatables/js/pdfmake.min.js"></script>
+    <script src="../src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- Datatable Setting js -->
+    <script src="../vendors/scripts/datatable-setting.js"></script>
+
+</body>
+
+</html>
