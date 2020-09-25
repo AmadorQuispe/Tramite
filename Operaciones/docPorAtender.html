@@ -432,43 +432,104 @@
 					<div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable ">
 						<div class="modal-content">
 							<div class="modal-header" data-bgcolor="#0b132b">
-								<h4 class="modal-title text-white" id="myLargeModalLabel">Enviar Expediente</h4>
+								<h4 class="modal-title text-white" id="myLargeModalLabel">Atender tramite</h4>
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 							</div>
 							<div class="modal-body">
 								<form class="">
-									<div class="card card-box">
-										<div class="card-header bg-secondary">Oficina Destino</div>
+									<div class="card card-box">										
 										<div class="card-body">
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-2 col-form-label">Agencia</label>
-												<div class="col-sm-12 col-md-4">
-													<select class="custom-select col-12">
-														<option selected="">Choose...</option>
-														<option value="1">Administrativa</option>
-														<option value="2">Arequipa</option>
-														<option value="3">Anta</option>
-													</select>
-												</div>
-												<label class="col-sm-12 col-md-2 col-form-label">Area o Gerencia</label>
-												<div class="col-sm-12 col-md-4">
-													<select class="custom-select col-12">
-														<option selected="">Choose...</option>
-														<option value="1">Gerencia general</option>
-														<option value="2">Gerencia Negocios</option>
-														<option value="3">Gerencia Riesgos</option>
-													</select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-2 col-form-label">Responsable del
-													Area</label>
-												<div class="col-sm-12 col-md-10">
-													<input class="form-control" type="text" placeholder="Johnny Brown">
-												</div>
-											</div>
+											<div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Estado del documento</label>
+                                                        <select class="custom-select col-12">
+                                                            <option selected="">Choose...</option>
+                                                            <option value="1">Observado</option>
+                                                            <option value="2">Respuesta</option>
+                                                            <option value="3">Derivado</option>
+                                                            <option value="4">Finalizado</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Observacion</label>
+                                                        <textarea class="form-control" style="height: 5em;" ></textarea>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-5 col-sm-12">
+                                                    <div class="border-bottom">Tramite</div>
+                                                    
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">Aprobado</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                        <label class="custom-control-label" for="customCheck2">Archivar</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                        <label class="custom-control-label" for="customCheck3">Atender</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                        <label class="custom-control-label" for="customCheck4">Dar seguimiento</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                        <label class="custom-control-label" for="customCheck5">Conocimiento y fines</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                        <label class="custom-control-label" for="customCheck6">Examinar, opinar</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                        <label class="custom-control-label" for="customCheck7">Preparar respuesta</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox mb-0 pb-0">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                                        <label class="custom-control-label" for="customCheck8">Tratar personalmente</label>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
 										</div>
-									</div>
+                                    </div>
+                                    
+                                    <div class="card card-box">
+                                        <div class="card-header bg-secondary">Oficina Destino</div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Agencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Administrativa</option>
+                                                        <option value="2">Arequipa</option>
+                                                        <option value="3">Anta</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-12 col-md-2 col-form-label">Area o Gerencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Gerencia general</option>
+                                                        <option value="2">Gerencia Negocios</option>
+                                                        <option value="3">Gerencia Riesgos</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Responsable del
+                                                    Area</label>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <input class="form-control" type="text" placeholder="Johnny Brown">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
 									<div class="accordion" id="accordionExample">
@@ -544,23 +605,80 @@
 																</tbody>
 															</table>
 														</div>
-
 													</div>
-
-
-
 												</div>
 											</div>
-
-
 										</div>
-									</div>
+                                    </div>
+                                    
+                                    <div class="card card-box">
+                                        <div class="card-header bg-secondary">Responder expediente</div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Agencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Administrativa</option>
+                                                        <option value="2">Arequipa</option>
+                                                        <option value="3">Anta</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-12 col-md-2 col-form-label">Area o Gerencia</label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Gerencia general</option>
+                                                        <option value="2">Gerencia Negocios</option>
+                                                        <option value="3">Gerencia Riesgos</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Responsable del
+                                                    Area</label>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <input class="form-control" type="text" placeholder="Johnny Brown">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="card card-box">
+                                        <div class="card-header bg-secondary">Datos del documento</div>
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Tipo de documento</label>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <select class="custom-select col-12">
+                                                        <option selected="">Choose...</option>
+                                                        <option value="1">Informe</option>
+                                                        <option value="2">Oficio</option>
+                                                        <option value="3">Memorandum</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-12 col-md-2 col-form-label">Folios</label>
+                                                <div class="col-sm-12 col-md-2">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Documento</label>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <input class="form-control" type="text" placeholder="Johnny Brown">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-12 col-md-2 col-form-label">Asunto</label>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <input class="form-control" type="text" placeholder="Johnny Brown">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
 								</form>
-
-
-
-
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
